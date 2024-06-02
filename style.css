@@ -15,8 +15,28 @@ body{
 }
 .trip__s1{
     display: flex;
-    gap: 3px;   
+    gap: 3px; 
+    animation-name: zoom;
+    animation-duration: 5s;  
+    opacity: 0;
+    animation-fill-mode: forwards
+    
 }
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+
+}
+
+
+
 
 .trip__s1  :hover{
     cursor: pointer;
@@ -132,6 +152,9 @@ body{
  align-items: center;
  margin-left: 25%;
  gap: 10px;
+ position: relative;
+ 
+ 
  
  
 }
@@ -143,14 +166,18 @@ body{
 
 .trip__container__s2 p:hover{
     cursor: pointer;
-    border-bottom: solid black 2px;
+    
 }
+
+
+
+
 .trip__container__s3 .two{
     width: 80px;
     height: 40px;
     border-radius: 20px;
     margin-left: 35%;
-    background-color: lightgreen;
+    background-color:  #84E9BD;
     font-size: 15px;
     border: none;
     font-weight: bolder;
@@ -163,21 +190,19 @@ body{
 
 .trip__container__s3{
     border: solid skyblue 0.1px ;
-    margin-top: 40px;
+    margin-top: 70px;
     
     padding: 10px;
     width: 700px;
     margin-left: 25%;
     border-radius: 100px;
-    position: sticky;
-    top: 80px;
-   z-index: 1;
-    background-color: white;
    
-  
+    
   
     
 }
+
+
 .trip__container__s3 input{
    border: none;
     font-size: 15px;
@@ -223,8 +248,6 @@ body{
     border-radius: 20px;
 
 }
-
-/*awards*/
 
 
 .trip__container{
@@ -333,7 +356,7 @@ body{
    
 }
 .trip__japan__s1{
-    margin-left: 10%;
+    margin-left: 150px;
     margin-top: 20px;
 }
 .trip__japan__s1 p{
@@ -353,7 +376,7 @@ body{
     width: 280px;
     height: 250px;
     border-radius: 10px;
-    margin-left: 60%;
+    margin-left: 60% ;
     
 }
 
@@ -461,11 +484,16 @@ body{
 
 .trip__footer__s3 .a1{
    
-    position: absolute;
+ position: absolute;
  margin-top: 80px;
  margin-left: 50px;
- 
   
+}
+
+.trip__footer__s3 .a1 :hover{
+    border: none;
+    cursor: pointer;
+   
 }
 
 
@@ -542,14 +570,106 @@ body{
     
 }
 .trip__footer__s3 .left,.right{
-   margin-left: 10px;
-   margin-top: 15px;
+   margin-left: 20px;
+   margin-top: 50px;
 }
 .trip__footer__s3 a{
-    margin-top: 100px;
+    margin-top: 90px;
+
   
    
 }
+
+.trip__footer__s3 .z3{
+  padding: 10px;
+  margin-left: 5px   
+ 
+}
+
+.trip__footer__s3 .z3:hover{
+    cursor: pointer;
+    border: solid black 2px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #f8e0cc;
+    border-radius: 20px;
+    border: none;
+}
+   
+.pop{
+    position: relative;
+    cursor: pointer;
+   
+}
+.pop1{
+    position: absolute;
+  
+    width: 500PX;
+    font-size: 30PX;
+    padding: 10px;
+    font-weight: bold;
+    display: none; 
+    
+}
+.pop:hover .pop1{
+  display: block;
+
+  
+}
+.pop2{
+    position: absolute;
+  
+    width: 500PX;
+    font-size: 30PX;
+    padding: 10px;
+    font-weight: bold;
+    display: none;    
+}
+.pop:hover .pop2{
+    display: block;
+
+}
+.pop3{
+    position: absolute;
+  
+    width: 500PX;
+    font-size: 30PX;
+    padding: 10px;
+    font-weight: bold;
+    display: none;    
+}
+.pop:hover .pop3{
+    display: block;
+
+}
+.pop4{
+    position: absolute;
+  
+    width: 500PX;
+    font-size: 30PX;
+    padding: 10px;
+    font-weight: bold;
+    display: none;    
+}
+.pop:hover .pop4{
+    display: block;
+
+}
+   
+   
+    
+
+@media screen and (max-width:800px) {
+
+    .trip__japan__s2{
+       align-items: center;
+    }
+    
+}
+
+
+   
+
 
 @media screen and (max-width:800px) {
 
@@ -563,6 +683,30 @@ body{
     .trip__container__s3{
         width: 300px;
         height: 40px;
+       
+    }
+}
+
+
+    
+
+
+
+@media screen and (max-width:800px) {
+
+    .trip__footer__s3 .z3{
+        padding: 20px;
+     
+        
+     
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+
+    .trip__container__s1{
+        margin-left: 20PX;
     }
 }
 
@@ -570,8 +714,9 @@ body{
 @media screen and (max-width:800px) {
     .trip__container__s2 { 
         
-   
         flex-wrap: wrap;
+  
+        
     }
     
 }
@@ -588,7 +733,11 @@ body{
 
 @media screen and (max-width:800px) {
     .trip__s2{
-        margin-left: 60px;
+        margin-left: 45px;
+    }
+    .trip__s3{
+        margin-left: 45px;
+
     }
 }
 @media screen and (max-width:800px) {
@@ -605,19 +754,69 @@ body{
     }
 }
 
-@media screen and (max-width:800) {
-    .trip__japan__s2{
-      
-    }
-}
 @media screen and (max-width:800px) {
     .trip__footer__s3{
-        width: 400px;
+        width: 500px;
+    }
+    
+}
+
+
+@media screen and (max-width:800px) {
+    .pop1{
+       
+        font-size: 15px;
+        bottom: 15px;
+        left: 1px;
+        align-items: center;
+       
+       
+    }
+    .pop2{
+       margin: auto;
+        font-size: 15px;
+        bottom: 20px;
+     align-items: center;
+       
+       
+    }
+    .pop3{
+        margin: auto;
+         font-size: 15px;
+         top: 20px;
+      align-items: center;
+        
+        
+     }
+
+     .pop4{
+        margin: auto;
+         font-size: 15px;
+         top: 20px;
+      align-items: center;
+        
+        
+     }
+    
+    
+}
+
+@media screen and (max-width:800px) {
+    .pop4:hover{
+        border-bottom: none;
     }
     
 }
    
    
+
+
+
+
+
+
+
+
 
 
 
