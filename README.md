@@ -14,12 +14,6 @@ The TripAdvisor website is a static web project that mimics the design and funct
 - **Clean Layout:** The design focuses on readability and ease of navigation.
 - **Interactive Elements:** Includes hover effects, sticky positions, and pop-up messages for enhanced user interaction.
 
-## Screenshots
-
-![Desktop View](screenshots/desktop.png)
-![Mobile View](screenshots/mobile.png)
-![Tablet View](screenshots/tablet.png)
-
 ## Installation
 
 To get a local copy up and running, follow these simple steps:
@@ -60,5 +54,5 @@ Contributions are what make the open source community such an amazing place to l
 
 Your Name - [luther B](mailto:luthersasi@gmail.com)
 
-Project Link: [https://github.com/your-username/tripadvisor-website](https://github.com/your-username/tripadvisor-website)
+Project Link: https://lutherbenny.github.io/Tripadvisor1/
 
